@@ -17,13 +17,12 @@
 
     <!-- Apps pinned to the dock row at the bottom, in this order. Missing apps are skipped. -->
     <string-array name="dock_apps">
-        <!-- Sony KD-55X75K: Garrett's order. HBO Max and YouTube TV each have two possible package names;
+        <!-- Sony KD-55X75K: Garrett's order. HBO Max is com.wbd.stream (Max) or the older com.hbo.hbonow;
              whichever is not installed is skipped. Confirm with pm list packages before building. -->
         <item>com.disney.disneyplus</item>
         <item>com.wbd.stream</item>
         <item>com.hbo.hbonow</item>
         <item>com.netflix.ninja</item>
-        <item>com.google.android.youtube.tv</item>
         <item>com.google.android.youtube.tvunplugged</item>
     </string-array>
     <!-- With fewer dock_apps than columns (or a dock app that is not installed), the free dock slots take
@@ -421,7 +420,7 @@
 
     <!-- Tiles per row in the grid; the dock always has this many slots. Tiles are 180dp wide at 4 columns and
          shrink to fit from 5 up (about 144dp at 5, 117dp at 6 on a 1080p TV). -->
-    <integer name="columns">5</integer>
+    <integer name="columns">4</integer>
 
     <!-- Basic motion is on; advanced effects are opt-in in the launcher's own Settings screen. -->
     <bool name="animations">true</bool>

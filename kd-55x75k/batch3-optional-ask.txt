@@ -1,0 +1,14 @@
+# Sony KD-55X75K (BRAVIA_VU3_4K), Google TV 14. Garrett's batch 3 of 3: OPTIONAL, each line needs a yes.
+# Comment out (#) any line Garrett wants to keep before applying.
+# Apply: TV_HOST=<tv> tools/disable.sh kd-55x75k/batch3-optional-ask.txt
+# Undo:  TV_HOST=<tv> tools/restore.sh kd-55x75k/batch3-optional-ask.txt
+com.sony.dtv.smarthelp                    # Sony help tile (Help in Settings may lose its page)
+com.sony.dtv.helpguidecontents            # on-TV help guide content
+com.sonypicturescore                      # Sony Pictures Core, a streaming app: ask
+com.google.android.syncadapters.calendar  # calendar sync: Assistant "what's on my calendar" may stop
+com.android.gallery3d                     # old gallery: photos/videos from a USB stick
+#
+# KEPT on purpose (in the model list, NOT here):
+#   com.google.android.apps.tv.dreamx         Ambient screensaver (Garrett uses it)
+#   com.google.android.tungsten.setupwraith   phone casting needs it after a reboot (Garrett casts)
+#   com.google.android.apps.tv.launcherx      the 4 app buttons + the Home redirect need it

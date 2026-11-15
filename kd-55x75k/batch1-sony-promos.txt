@@ -1,0 +1,9 @@
+# Sony KD-55X75K (BRAVIA_VU3_4K), Google TV 14. Garrett's batch 1 of 3: Sony promos and in-store demo.
+# Subset of examples/sony-bravia-vu3/debloat.txt (tested on two units, build UKR1.240726.001).
+# Apply: TV_HOST=<tv> tools/disable.sh kd-55x75k/batch1-sony-promos.txt
+# Undo:  TV_HOST=<tv> tools/restore.sh kd-55x75k/batch1-sony-promos.txt
+# After: Home, Settings, Input button, the 4 app buttons, Ray volume (tap and hold).
+com.sony.dtv.promos                       # My BRAVIA promos
+com.sony.dtv.sonyselect                   # Sony Select
+com.sony.dtv.sonytab                      # Sony content tab
+com.sony.dtv.multiscreendemo              # in-store demo
