@@ -11,8 +11,8 @@ com.sony.rvu                                   # DIRECTV Ready (RVU client)
 com.sony.dtv.smarthomesettings                 # Alexa setup
 # Partner/streaming apps not on the household's list
 air.com.vudu.air.DownloaderTablet
-com.amazon.amazonvideo.livingroom
-com.apple.atve.androidtv.appletv
+# KEPT com.amazon.amazonvideo.livingroom   # Prime Video (household uses it)
+# KEPT com.apple.atve.androidtv.appletv    # Apple TV (household uses it)
 com.bydeluxe.d3.android.program.starz
 com.crackle.androidtv
 com.espn.score_center
@@ -24,3 +24,4 @@ com.reelgood.android
 com.showtime.showtimeanytime
 com.turner.tnt.android.networkapp
 tv.pluto.android
+com.google.android.inputmethod.japanese        # Japanese keyboard; Gboard (latin) is the default
