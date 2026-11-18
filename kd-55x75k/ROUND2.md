@@ -58,3 +58,11 @@ T 'dumpsys meminfo | grep -E "Free RAM|Used RAM"'
 
 `T sync`, wait 15 s, reboot; disabled list unchanged, power-on lands on the new Home, HomeKeyService still bound.
 Wireless debugging off, revoke authorisations, `tools/adb-closed.py <tv-ip> <port>` and then 5555: both closed.
+
+## Applied 2026-11-17
+
+Launcher rebuilt (588,405 B), HomeKeyService still the only accessibility service, Home redirect lands on
+`com.gathin.tvhome`. Weather installed, card shown, city New York; line under the clock verified on screen.
+Privacy check: nothing new (partnersetup and feedback already off; Assistant kept). AdGuard Private DNS on,
+doubleclick blocked, YouTube TV loads. Caches trimmed (~0.3 GB), animations 0.5, apps compiled.
+Free RAM ~450 MB before and after (launcherx stays resident by design).
