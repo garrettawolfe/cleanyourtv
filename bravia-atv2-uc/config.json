@@ -18,5 +18,6 @@
   "reduced_motion": true,
   "restore_key_services": false,
   "key_filter": true,
-  "greeting_name": "Garrett"
+  "greeting_name": "Garrett",
+  "game_day": "io.github.sumyabazar1.weather"
 }

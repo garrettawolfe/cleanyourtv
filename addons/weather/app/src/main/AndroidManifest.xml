@@ -30,5 +30,11 @@
             </intent-filter>
             <meta-data android:name="com.gathin.tvhome.card" android:resource="@xml/module_card" />
         </activity>
+        <!-- The weather under Home's clock: set the launcher's game_day key to this package. -->
+        <meta-data android:name="com.gathin.tvhome.games" android:value="io.github.sumyabazar1.weather.home" />
+        <provider
+            android:name=".HomeLine"
+            android:authorities="io.github.sumyabazar1.weather.home"
+            android:exported="true" />
     </application>
 </manifest>

@@ -2835,7 +2835,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             bar.setColor(t.colour);
             raceBar.setBackground(bar);
             raceKicker.setText(t.topLine);
-            if (GameDay.live(t, now)) {
+            if (!t.headline.isEmpty()) {
+                raceHeadline.setText(t.headline);
+            } else if (GameDay.live(t, now)) {
                 SpannableString live = new SpannableString("\u25CF  " + getString(R.string.game_live));
                 live.setSpan(new ForegroundColorSpan(RACE_RED), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                 raceHeadline.setText(live);

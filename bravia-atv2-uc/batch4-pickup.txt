@@ -1,0 +1,2 @@
+# Pick-up check 2026-11-17 (tools/privacy.py): Google Partner Setup RLZ attribution pings
+com.google.android.partnersetup
