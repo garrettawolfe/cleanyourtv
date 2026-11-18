@@ -33,3 +33,10 @@ Prime Video and Apple TV re-enabled (in the grid under the dock). Cleared app ca
 animation scales 0.5 (undo: `settings put global window_animation_scale 1`, same for
 `transition_animation_scale` and `animator_duration_scale`), Japanese keyboard disabled, the household's
 apps compiled with `cmd package compile -m speed-profile`. Free RAM went from ~375 MB to ~770 MB.
+||||||| parent of 43f227c9 (bravia-atv2-uc: greeting, Weather (Fahrenheit) and Digital Rain cards)
+## Extras (2026-11-17)
+
+Greeting "Good evening, Garrett" (`greeting_name` in `config.json`). Add-ons installed as Home cards:
+Weather (built with Fahrenheit as the default, `addons/weather/.../options.xml`) and Digital Rain.
+Digital Rain as the system screensaver instead of the ambient one:
+`tools/venv/bin/python -I tools/tv.py 'settings put secure screensaver_components io.github.dennisoleary.digitalrain/.RainDream'`
