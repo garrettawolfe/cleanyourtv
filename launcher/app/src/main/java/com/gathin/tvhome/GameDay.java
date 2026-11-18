@@ -103,9 +103,11 @@ final class GameDay {
             io.execute(() -> {
                 List<Object[]> rows = new ArrayList<>();
                 try (Cursor c = ctx.getContentResolver().query(uri, COLUMNS, null, null, null)) {
+                    // Optional "headline": text shown as is in place of the countdown (a weather line, say).
+                    int headline = c == null ? -1 : c.getColumnIndex("headline");
                     while (c != null && c.moveToNext()) {
                         rows.add(new Object[] {c.getString(0), c.getString(1), c.getLong(2), c.getLong(3), c.getInt(4),
-                                c.getString(5), c.getInt(6)});
+                                c.getString(5), c.getInt(6), headline >= 0 ? c.getString(headline) : null});
                     }
                 } catch (RuntimeException gone) {
                     // Uninstalled or crashed mid-query: keep what is on screen.
@@ -142,7 +144,9 @@ final class GameDay {
             if (start < 0 || end <= start) continue;
             String word = r[1] instanceof String ? (String) r[1] : "";
             int colour = r[4] instanceof Number ? ((Number) r[4]).intValue() : 0xFFFFFFFF;
-            out.add(new Turn((String) r[0], word, start, end, colour));
+            Turn t = new Turn((String) r[0], word, start, end, colour);
+            if (r.length > 7 && r[7] instanceof String) t.headline = (String) r[7];
+            out.add(t);
         }
         return out;
     }
@@ -165,6 +169,8 @@ final class GameDay {
         /** ARGB, for the short bar. */
         final int colour;
         final boolean f1;
+        /** Shown as is instead of "Live now" or the countdown when not empty. */
+        String headline = "";
 
         Turn(String topLine, String word, long startMs, long endMs, int colour) {
             this(topLine, word, startMs, endMs, colour, false);
