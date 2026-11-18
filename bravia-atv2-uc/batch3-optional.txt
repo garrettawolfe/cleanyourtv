@@ -1,0 +1,11 @@
+# Batch 3: features the household may use. Comment out what is kept before applying.
+# KEPT com.google.android.apps.mediashell             # Chromecast built-in
+screnmirroring.com                             # Screen mirroring (Miracast)
+com.sony.dtv.networkapp.wifidirect
+com.google.android.tv.remote.service           # Android TV phone-app remote
+com.sony.huey.dlna.module                      # DLNA renderer
+com.sony.huey.dlna.renderersettings
+com.sonyericsson.dlna
+com.sony.dtv.osat.music                        # USB music player
+com.sony.dtv.smartmediaapp                     # USB media player
+# KEPT com.google.android.backdrop                    # ambient screensaver

@@ -1,0 +1,19 @@
+# Sony BRAVIA 4K GB (BRAVIA_ATV2_UC), Android TV 9, PTT1.190515.001.S54 672201
+# Batch 1: ACR, ads/promos, telemetry, retail demo. From examples/sony-bravia-4k-gb-us/debloat.txt.
+tv.samba.ssm
+com.sony.dtv.sonyselect
+com.sony.dtv.promos
+com.sony.dtv.discovery
+com.sony.dtv.bivlinfo
+com.sony.dtv.tvlaunchercustomizer
+com.google.android.tvrecommendations
+android.autoinstalls.config.sony.bravia
+com.sony.dtv.demomode
+com.sony.dtv.demosupport
+com.sony.dtv.multiscreendemo
+com.sony.dtv.da.service
+com.qterics.da.product
+com.sony.dtv.sonybugreportsys
+com.google.android.tv.bugreportsender
+com.google.android.feedback
+com.sony.dtv.b2b.vendorprotocol
