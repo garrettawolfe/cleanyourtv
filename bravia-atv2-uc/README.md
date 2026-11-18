@@ -36,7 +36,6 @@ apps compiled with `cmd package compile -m speed-profile`. Free RAM went from ~3
 ||||||| parent of 43f227c9 (bravia-atv2-uc: greeting, Weather (Fahrenheit) and Digital Rain cards)
 ## Extras (2026-11-17)
 
-Greeting "Good evening, Garrett" (`greeting_name` in `config.json`). Add-ons installed as Home cards:
-Weather (built with Fahrenheit as the default, `addons/weather/.../options.xml`) and Digital Rain.
-Digital Rain as the system screensaver instead of the ambient one:
-`tools/venv/bin/python -I tools/tv.py 'settings put secure screensaver_components io.github.dennisoleary.digitalrain/.RainDream'`
+Greeting "Good evening, Garrett" (`greeting_name` in `config.json`). The Weather add-on (Fahrenheit by default)
+shows the city, conditions, temperature and today's high/low under the clock (`game_day` set to its package)
+and is also a Home card. Digital Rain was tried and removed.
