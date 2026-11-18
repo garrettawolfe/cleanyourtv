@@ -26,3 +26,10 @@ tools/theme.sh bravia-atv2-uc     # after editing config.json (dock order, colum
 No computer: Settings > Apps > See all apps > Show system apps > the app > Enable.
 Old Home back: enable `com.google.android.tvlauncher`, or uninstall CleanYourTV in Settings > Apps.
 After a Sony firmware update: `tools/venv/bin/python -I tools/check.py bravia-atv2-uc/batch1-ads-tracking.txt` (and each batch).
+
+## Speed tweaks (2026-11-17)
+
+Prime Video and Apple TV re-enabled (in the grid under the dock). Cleared app caches (~0.5 GB back),
+animation scales 0.5 (undo: `settings put global window_animation_scale 1`, same for
+`transition_animation_scale` and `animator_duration_scale`), Japanese keyboard disabled, the household's
+apps compiled with `cmd package compile -m speed-profile`. Free RAM went from ~375 MB to ~770 MB.
