@@ -17,5 +17,6 @@
   "stock_home_redirect": "",
   "reduced_motion": true,
   "restore_key_services": false,
-  "key_filter": true
+  "key_filter": true,
+  "greeting_name": "Garrett"
 }
