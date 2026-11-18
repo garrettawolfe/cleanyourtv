@@ -1,0 +1,26 @@
+# Batch 2: preloaded apps not on the keep list (Spotify, Disney+, HBO Max, YouTube, YouTube TV, Netflix).
+com.sony.dtv.customersupport
+com.sony.dtv.smarthelp
+com.sony.dtv.imanual
+com.google.android.youtube.tvmusic
+com.google.android.videos
+com.google.android.play.games
+com.google.android.music                       # Google Play Music (dead service)
+com.hbo.hbonow                                 # old HBO app; com.wbd.stream (HBO Max) is kept
+com.sony.rvu                                   # DIRECTV Ready (RVU client)
+com.sony.dtv.smarthomesettings                 # Alexa setup
+# Partner/streaming apps not on the household's list
+air.com.vudu.air.DownloaderTablet
+com.amazon.amazonvideo.livingroom
+com.apple.atve.androidtv.appletv
+com.bydeluxe.d3.android.program.starz
+com.crackle.androidtv
+com.espn.score_center
+com.foxnews.android
+com.fxnetworks.fxnow
+com.hulu.livingroomplus
+com.peacocktv.peacockandroid
+com.reelgood.android
+com.showtime.showtimeanytime
+com.turner.tnt.android.networkapp
+tv.pluto.android

@@ -1,0 +1,9 @@
+# Sony KD-55X75K (BRAVIA_VU3_4K), Google TV 14. Garrett's batch 4: store apps he does not use (asked 2026-11-15).
+# Disabled, not uninstalled: same memory saved, and restore.sh brings them back. To free storage too,
+# uninstall them by hand in Settings > Apps.
+# Apply: TV_HOST=<tv> tools/disable.sh kd-55x75k/batch4-unused-apps.txt
+# Undo:  TV_HOST=<tv> tools/restore.sh kd-55x75k/batch4-unused-apps.txt
+air.com.vudu.air.DownloaderTablet         # Vudu (Fandango at Home)
+com.google.android.videos                 # Google TV movies & shows app (not the Home screen)
+com.hulu.livingroomplus                   # Hulu
+tv.pluto.android                          # Pluto TV

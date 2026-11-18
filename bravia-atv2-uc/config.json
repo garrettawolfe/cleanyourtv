@@ -1,0 +1,21 @@
+{
+  "dock_apps": [
+    "com.spotify.tv.android",
+    "com.disney.disneyplus",
+    "com.wbd.stream",
+    "com.google.android.youtube.tv",
+    "com.google.android.youtube.tvunplugged",
+    "com.netflix.ninja"
+  ],
+  "columns": 6,
+  "hidden_apps": [
+    "com.sony.dtv.tvx",
+    "com.sony.dtv.tvxlauncher.programguide",
+    "com.hbo.hbonow"
+  ],
+  "live_tv_package": "",
+  "stock_home_redirect": "",
+  "reduced_motion": true,
+  "restore_key_services": false,
+  "key_filter": true
+}

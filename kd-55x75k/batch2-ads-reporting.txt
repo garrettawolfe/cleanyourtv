@@ -1,0 +1,15 @@
+# Sony KD-55X75K (BRAVIA_VU3_4K), Google TV 14. Garrett's batch 2 of 3: ad services, reporting, setup leftovers.
+# Subset of examples/sony-bravia-vu3/debloat.txt (tested on two units, build UKR1.240726.001).
+# None of these serve Assistant, casting, AirPlay, CEC, the screensaver or accessibility.
+# Apply: TV_HOST=<tv> tools/disable.sh kd-55x75k/batch2-ads-reporting.txt
+# Undo:  TV_HOST=<tv> tools/restore.sh kd-55x75k/batch2-ads-reporting.txt
+# After: same checks as batch 1, plus cast from the phone, AirPlay, "Hey Google", one app opens and plays.
+com.android.adservices.api                # Privacy Sandbox ad services
+com.android.federatedcompute.services     # federated compute
+com.android.ondevicepersonalization.services # on-device personalization
+com.google.android.feedback               # Google feedback reporter
+com.google.android.partnersetup           # partner setup/attribution
+com.google.android.onetimeinitializer     # one-time setup initializer
+android.autoinstalls.config.google.gtvpai # Google TV partner auto-installs
+com.google.android.play.games             # Play Games
+com.android.printspooler                  # print service
